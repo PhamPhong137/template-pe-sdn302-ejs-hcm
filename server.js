@@ -7,7 +7,8 @@ require("dotenv").config();
 
 const connectDb = require("./config/db");
 const db = require("./models");
-const ApiRouter = require("./routes/api.route");
+const ApiRouter = require("./router/api.route");
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -31,8 +32,7 @@ app.get("/login", async (req, res, next) => {
 
 
 //Recieve request 
-app.use("/auth", ApiRouter);
-
+app.use("/", ApiRouter);
 
 app.use(async (req, res, next) => {
     next(httpErrors.BadRequest("Bad request"));

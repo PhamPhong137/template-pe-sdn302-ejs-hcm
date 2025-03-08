@@ -7,13 +7,13 @@ To set up the project, follow these steps:
 1. **Clone the Repository**:
    Open your terminal and run the following command to clone the repository:
    ```bash
-   git clone hhttps://github.com/PhamPhong137/template-pe-sdn302-jwt.git
+   git clone https://github.com/PhamPhong137/template-pe-sdn302-ejs-hcm.git
    ```
 
 2. **Navigate to the Project Directory**:
    Change into the project directory:
    ```bash
-   cd template-pe-sdn302-jwt
+   cd template-pe-sdn302-ejs-hcm
    ```
 
 3. **Install Dependencies**:

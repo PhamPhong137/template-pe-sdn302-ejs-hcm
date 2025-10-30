@@ -1,14 +1,18 @@
 var express = require('express');
 var router = express.Router();
+const authController = require('../controller/auth.controller');
 
-/* GET signin page */
-router.get('/signin', function(req, res, next) {
-  res.render('auth/signin', { title: 'Sign In' });
-});
+/* GET login page */
+router.get('/signin', authController.showLogin);
 
-/* GET signup page */
-router.get('/signup', function(req, res, next) {
-  res.render('auth/signup', { title: 'Sign Up' });
-});
+/* GET register page */
+router.get('/signup', authController.showRegister);
+
+/* POST login form */
+router.post('/login', authController.login);
+
+/* POST register form */
+router.post('/register', authController.register);
+
 
 module.exports = router;

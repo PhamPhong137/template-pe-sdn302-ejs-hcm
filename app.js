@@ -10,7 +10,7 @@ require("dotenv").config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const authRouter = require('./routes/auth');
+const authRouter = require('./routes/auth.route');
 
 
 const connectDB = require('./config/db');
